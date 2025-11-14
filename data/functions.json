@@ -1,0 +1,1 @@
+{"mkmms": "import os\ndef mkmms(file):\n\tos.makedirs(file)", "limms": "import os\ndef limms():\n\treturn os.listdir()", "delmms": "import os\ndef delmms(file):\n\tos.remove(file)"}
