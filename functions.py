@@ -14,11 +14,14 @@ class Functions:
 		except:
 			raise "You maybe have delete this file, try to reinstall system"
 
-	def exec_func(self, name, *args):
-		with open("data/functions.json") as r:
-			code = json.load(r)
-			code = code[name]
-			print(code)
-		env = {}
-		exec(code, env)
-		env[name](*args)
+	def exec_cmd(self, name, *args):
+	    with open("data/functions.json") as r:
+	        functions = json.load(r)
+	        path = functions[name]
+	    
+	    with open(path) as f:
+	        code = f.read()
+
+	    env = {"__builtins__": __builtins__}
+	    exec(code, env)
+	    env[name](*args)
