@@ -34,7 +34,3 @@ class Shell:
 				return json.load(o)
 		except:
 			raise "You maybe have delete this file, try to reinstall system"
-
-f = Functions()
-sh = Shell("nobody", f)
-sh.run()

@@ -2,6 +2,7 @@
 import json
 
 BANNED_CHARACTERS = ["{" ,"}", "\\", "[", "]", "(", ")", "<", ">", "\'", "\"", "/" " "]
+BANNED_WORDS = ["err", "error"]
 def ndoge():
 	dogers = {}
 	with open("data/dogers.json", "r") as d:
@@ -22,9 +23,18 @@ def ndoge():
 					print(f"err: You cant use {i} character")
 					break
 			else:
-				with open("data/dogers.json", "w") as d:
-					dogers[name] = {"name" : name, "password" : password}
-					json.dump(dogers, d)
+				for i in BANNED_WORDS:
+					if i == name:
+						print(f"err: You cant use "{i}" as your name")
+						break
+					if i == password:
+						print(f"err: You cant use {i} as your password")
+						break
+				else:
+					with open("data/dogers.json", "w") as d:
+						dogers[name] = {"name" : name, "password" : password}
+						json.dump(dogers, d)
+						
 		else:
 			print("err: This name is already exist")
 	else:

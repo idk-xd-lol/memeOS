@@ -25,3 +25,16 @@ class Functions:
 	    env = {"__builtins__": __builtins__}
 	    exec(code, env)
 	    env[name](*args)
+
+	def return_exec_cmd(self, name, *args):
+	    with open("data/functions.json") as r:
+	        functions = json.load(r)
+	        path = functions[name]
+	    
+	    with open(path) as f:
+	        code = f.read()
+
+	    env = {"__builtins__": __builtins__}
+	    exec(code, env)
+	    return env[name](*args)
+
