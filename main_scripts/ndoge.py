@@ -25,7 +25,7 @@ def ndoge():
 			else:
 				for i in BANNED_WORDS:
 					if i == name:
-						print(f"err: You cant use "{i}" as your name")
+						print(f"err: You cant use \"{i}\" as your name")
 						break
 					if i == password:
 						print(f"err: You cant use {i} as your password")

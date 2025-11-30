@@ -4,4 +4,6 @@
 "delmm":"main_scripts/delmm.py",
 "dogelist":"main_scripts/dogelist.py",
 "dev_dogelist":"main_scripts/dev_dogelist.py",
-"ndoge":"main_scripts/ndoge.py"}
+"ndoge":"main_scripts/ndoge.py", 
+"app" : "main_scripts/app.py",
+"chmms" : "main_scripts/chmms.py"}

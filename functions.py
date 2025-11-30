@@ -15,9 +15,7 @@ class Functions:
 			raise "You maybe have delete this file, try to reinstall system"
 
 	def exec_cmd(self, name, *args):
-	    with open("data/functions.json") as r:
-	        functions = json.load(r)
-	        path = functions[name]
+	    path = self.functions[name]
 	    
 	    with open(path) as f:
 	        code = f.read()
@@ -27,14 +25,10 @@ class Functions:
 	    env[name](*args)
 
 	def return_exec_cmd(self, name, *args):
-	    with open("data/functions.json") as r:
-	        functions = json.load(r)
-	        path = functions[name]
-	    
-	    with open(path) as f:
-	        code = f.read()
-
-	    env = {"__builtins__": __builtins__}
-	    exec(code, env)
-	    return env[name](*args)
+		path = self.functions[name]
+		with open(path) as f:
+			code = f.read()
+		env = {"__builtins__": __builtins__}
+		exec(code, env)
+		return env[name](*args)
 
