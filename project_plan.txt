@@ -1,0 +1,34 @@
+plan:
+1. make python app isolation system:
+	1. create new python subprocess
+	2. add multiprocessing
+	3. do it in main code
+	4. do permission system
+	how it will work:
+		kernel -> app/function -> create new subprocess -> set less permissions -> compile app
+
+2. create first gui in pygame:
+	1. shell
+	2. desktop
+	3. icons
+	4. apps
+
+3. C# compatibility:
+	1. make compatibility with C# scripts
+	2. make some C# applications
+
+4. Network:
+	1. add network system by socket
+
+5. C++ app isolation
+
+6. C++ GTK GUI
+
+7. OS boot:
+	1. create ELF file to boot system with grub
+	2. boot C++ 'platform'
+	3. boot python kernel
+
+8. ISO installer
+ 
+9. Website with OS

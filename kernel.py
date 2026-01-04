@@ -22,7 +22,7 @@ class Kernel:
 
 	def login(self):
 		"""Logining"""
-		with open("data/dogers.json", "r") as u:
+		with open("data/users.json", "r") as u:
 			dogers = json.load(u)
 			name = input("Enter login:\t")
 			password = getpass("Enter Password:\t")
@@ -36,6 +36,6 @@ class Kernel:
 					self.tries += 1
 					return "error"
 			else:
-				print("there is no doger with this name, try again")
+				print("there is no user with this name, try again")
 				return "error"
 k = Kernel()

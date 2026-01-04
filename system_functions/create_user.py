@@ -3,7 +3,7 @@ import json
 
 BANNED_CHARACTERS = ["{" ,"}", "\\", "[", "]", "(", ")", "<", ">", "\'", "\"", "/" " "]
 BANNED_WORDS = ["err", "error"]
-def ndoge():
+def create_user():
 	dogers = {}
 	with open("data/dogers.json", "r") as d:
 		dogers = json.load(d)

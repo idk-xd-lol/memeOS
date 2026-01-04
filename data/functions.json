@@ -1,9 +1,9 @@
-{"mkmms":"main_scripts/mkmms.py", 
-"limms":"main_scripts/limms.py", 
-"delmms":"main_scripts/delmms.py",
-"delmm":"main_scripts/delmm.py",
-"dogelist":"main_scripts/dogelist.py",
-"dev_dogelist":"main_scripts/dev_dogelist.py",
-"ndoge":"main_scripts/ndoge.py", 
-"app" : "main_scripts/app.py",
-"chmms" : "main_scripts/chmms.py"}
+{"mkdir":"system_functions/mkdir.py", 
+"ls":"system_functions/ls.py", 
+"rmdir":"system_functions/rmdir.py",
+"rmfile":"system_functions/rmfile.py",
+"userlist":"system_functions/userlist.py",
+"dev_userlist":"system_functions/dev_userlist.py",
+"create_user":"system_functions/create_user.py", 
+"pxm" : "system_functions/pxm.py",
+"cd" : "system_functions/cd.py"}

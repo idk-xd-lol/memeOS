@@ -1,4 +1,4 @@
 #chmms
 import os
-def chmms(path):
+def cd(path):
 	os.chdir(path)

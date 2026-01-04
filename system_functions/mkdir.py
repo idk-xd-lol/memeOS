@@ -1,6 +1,6 @@
 import os
 
-def mkmms(path = None):
+def mkdir(path = None):
 	if path == None:
 		path = input("Enter memes name or path:")
 	if path.strip():

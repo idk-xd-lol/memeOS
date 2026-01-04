@@ -2,5 +2,5 @@
 #delete one file
 import os
 
-def delmm(file):
+def rmfile(file):
 	os.remove(file)

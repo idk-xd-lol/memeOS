@@ -1,5 +1,5 @@
 #delmms
 import os
 
-def delmms(path):
+def rmdir(path):
 	os.rmdir(path)

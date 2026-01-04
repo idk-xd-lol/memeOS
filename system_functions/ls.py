@@ -1,4 +1,4 @@
 import os
 
-def limms(path = "."):
+def ls(path = "."):
 	print(os.listdir(path))
