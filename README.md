@@ -1,9 +1,5 @@
 <h1>Hi, it's my own OS on python</h1>
-<h2>There a plan with this project:<h2>
-<p>1. Make a OS in console with common functions, and some terminal apps<p>
-<p>2. GUI for this OS<p>
-<p>3. Add a some C# apps, and make to possible use apps packages<p>
-<p>4. Make this system bootable and add some c++ features<p>
-<p>5. Add more python features, and internet connection<p>
-<p>6. Make a JavaScript page for project<p>
-<p>7. Finish project and add new updates<p>
+<p>This OS will be using mostly python for core and os, but also there will some c++ code for app isolation and booting and it will use grub as bootloader</p>
+<p>IMPORTANT THING: It's not real OS and it won't replace Linux, Windows or MacOS, it's just an experemental OS, so don't take it very serious</p>
+<p>i'm not professional programmer, so i will make this project very long, and also there might be long breaks, because i'll learning something new</p>
+<p>sorry for bad english</p>
